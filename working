@@ -1,0 +1,11 @@
+content
+
+Classification with the Model:
+
+The machine learning model you’ve trained classifies the image as either a QR code or a barcode.
+This part uses the supervised learning model that you’ve developed. The model processes the image and predicts whether the image contains a QR code or a barcode based on features it has learned during training.
+It helps in distinguishing between QR codes and barcodes if both types are present in the same dataset or images.
+Scanning and Decoding the Codes:
+
+Once the model classifies the image as a QR code or barcode, the project uses a separate scanning mechanism (via the pyzbar library) to decode the content inside the image, such as the data encoded in the QR code or barcode.
+If a QR code is detected, it decodes the information encoded in the QR code. Similarly, if a barcode is detected, it decodes the data from the barcode.
